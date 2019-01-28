@@ -7,11 +7,11 @@ var jsonParser = bodyParser.json()
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
  
 // For the database
-var sqlite3 = require('sqlite3');
-var db = new sqlite3.Database('./db/dnd35.db');
+//var sqlite3 = require('sqlite3');
+//var db = new sqlite3.Database('./db/dnd35.db');
  
 // Add restful controller
-require('./routes/ClassController')(app, db, jsonParser);
+//require('./routes/ClassController')(app, db, jsonParser);
  
 // Serve static files
 app.use(express.static('wwwroot'))

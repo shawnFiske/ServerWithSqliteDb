@@ -15,7 +15,7 @@ module.exports = function(app, db, jsonParser){
   });
   */
  app.get('/api/class', function(req, res) {
-    console.log("SELECT " + "*" + " FROM class_table");
+    console.log("SELECT " + "*" + " FROM class_table WHERE id = 1");
     db.all("SELECT " + "*" + " FROM class_table WHERE id = 1", function(err, rows) {
         res.json(rows);
     });
